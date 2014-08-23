@@ -82,4 +82,4 @@ descrNames <- useDescriptiveActivityNames(meanStdData)
 #Point 5: Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 tidyDF <- createTidyDf(descrNames)
 # Create a file with the new tidy dataset
-write.table(tidyDF,"./data/tidyDataset.txt")
+write.table(tidyDF,"./data/tidyDataset.txt", row.names=FALSE)
